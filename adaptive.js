@@ -34,6 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // пароль
 document.addEventListener('DOMContentLoaded', function() {
+    // Проверяем, не находимся ли мы на index.html
+    if (window.location.pathname.endsWith('index.html') || 
+        window.location.pathname === '/' || 
+        window.location.pathname === '/index.html') {
+        return; // Прекращаем выполнение скрипта для index.html
+    }
+
     // Список разрешенных паролей
     const validPasswords = ["secret123", "admin2024", "мойпароль"];
     
@@ -69,12 +76,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function unlockContent() {
-        overlay.style.display = 'none';
-        body.classList.remove('password-locked');
-        document.querySelector('.main').style.filter = 'none';
-        document.querySelector('.main').style.pointerEvents = 'auto';
+        if (overlay) overlay.style.display = 'none';
+        if (body) body.classList.remove('password-locked');
+        const main = document.querySelector('.main');
+        if (main) {
+            main.style.filter = 'none';
+            main.style.pointerEvents = 'auto';
+        }
     }
     
     // Фокус на поле ввода
-    passwordInput.focus();
+    if (passwordInput) passwordInput.focus();
 });
