@@ -360,7 +360,7 @@ body {
   margin-top: 7.85rem;
 }
 
-.block_moduls_ul a:nth-child(n) {
+.block_moduls_ul a:nth-child(n + 3) {
   /* Визуальные стили неактивной кнопки */
   opacity: 0.6; /* Полупрозрачность */
   color: #666666; /* Серый текст */
