@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+	font-family: 'Sloop_Script_Pro';
+	src: url(fonts/MiConv.com__Sloop_Script_Pro.ttf) format('ttf'),
+		 url(fonts/Sloop_Script_Pro.otf) format('otf'),
+		 url(fonts/MiConv.com__Sloop_Script_Pro.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+	:root {
+		--k: 0.5!important;
+	}
+}
+@media (min-width: 820px) {
+	:root {
+		--k: 0.6!important;
+	}
+}
+@media (min-width: 1025px) {
+	:root {
+		--k: 0.7!important;
+	}
+}
+@media (min-width: 1366px) {
+	:root {
+		--k: 0.9!important;
+	}
+}
+@media (min-width: 1920px) {
+	:root {
+		--k: 1!important;
+	}
+}

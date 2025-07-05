@@ -1,0 +1,65 @@
+:root {
+	--border_radius: 4.64rem;
+	--border_radius_low: 3rem;
+	--letter_spacing: -0.05em;
+	--line_height: 1em;
+	--font-size: 2.71rem;
+	--k: 0.5;
+}
+.zag {
+	font-size: 8.37rem;
+	letter-spacing: -0.06em;
+	text-align: center;
+	font-weight: 400;
+	font-family: 'Forum';
+	line-height: 0.81em;
+}
+.font_zag {
+	font-family: 'Sloop_Script_Pro';
+	letter-spacing: 0.2rem;
+	font-size: 9.57rem;
+}
+.button {
+	border-radius: var(--border_radius);
+	background-color: var(--white_blue);
+	color: var(--white);
+	width: 60.28rem;
+	height: 9.28rem;
+	margin-inline: auto;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-size: 2.71rem;
+	color: var(--white);
+	cursor: pointer;
+	display: block;
+	text-align: left;
+	padding-inline: 3.64rem;
+	position: relative;
+}
+.button::after {
+	content: '';
+	position: absolute;
+	background-image: url(svg/arrow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 2.28rem;
+	height: 3.07rem;
+	right: 3.14rem;
+}
+.grey {
+	opacity: 0.3;
+}
+
+						/* <li class="lessens_li_li">
+							После просмотра данного урока вы сможете <br>
+							работать в программе Figma без трудностей, <br>
+							потому что мы разобрали все функции
+						</li>
+						<li class="lessens_li_li">
+							<p>Домашнее задание :</p>
+							<ul class="homework_ul">
+								li.homework_li*
+							</ul>
+						</li> */

@@ -1,0 +1,431 @@
+/* Общие свойства */
+html {
+  font-size: calc(14px * var(--k));
+  width: 100vw;
+}
+main {
+  width: calc(1024px * var(--k));
+  margin-inline: auto;
+  color: var(--black);
+  font-family: "Inter";
+  font-size: var(--font-size);
+  font-weight: 200;
+}
+main * {
+  letter-spacing: var(--letter_spacing);
+  line-height: var(--line_height);
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* Блокируем горизонтальную прокрутку */
+  position: relative; /* Для некоторых браузеров */
+}
+/* Главный блок */
+.block_header {
+  padding-top: 9.21rem;
+  padding-bottom: 6.3rem;
+  background-color: var(--blue);
+  color: var(--white);
+  background-image: url(png/logo.png);
+  background-position: center 8rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.block_header .zag {
+  margin-bottom: 4rem;
+}
+.block_header img {
+  margin-bottom: 2.67rem;
+  margin-inline: auto;
+  width: 60rem;
+}
+.second_span {
+  position: relative;
+  top: -2rem;
+  line-height: 0.8em;
+}
+
+/* Важная информация */
+.block_info {
+  padding: 12.14rem 0 8.92rem;
+  color: var(--black);
+}
+.block_info .zag {
+  text-align: left;
+  margin-left: 5.64rem;
+  margin-bottom: 9.88rem;
+}
+.information {
+  position: relative;
+  top: -2.6rem;
+  left: 1rem;
+}
+.information::after {
+  content: "";
+  position: absolute;
+  background-image: url(jpg/girl_with_mackbook.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18.14rem;
+  height: 18.12rem;
+  top: -14rem;
+}
+.block_info_ul {
+  font-weight: 300;
+  margin-left: 18.78rem;
+  margin-bottom: 6.21rem;
+}
+.block_info_li {
+  margin-bottom: 5.14rem;
+  position: relative;
+}
+.block_info_li::before {
+  content: "";
+  position: absolute;
+  background-image: url(png/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 19rem;
+  width: 12.78rem;
+  left: -17rem;
+  top: -2rem;
+}
+#block_info_li_1::before {
+  left: -18.2rem;
+}
+#block_info_li_2::before {
+  background-image: url(png/2.png);
+  top: -1rem;
+}
+#block_info_li_3::before {
+  background-image: url(png/3.png);
+  top: 0rem;
+}
+.block_info h3 {
+  color: var(--blue);
+  text-align: center;
+}
+
+/* Уроки и модули */
+.block_moduls {
+  color: var(--white);
+  background-color: var(--black_background);
+  padding: 7.42rem 0 3.07rem;
+  text-align: center;
+}
+.block_moduls .font_zag {
+  position: relative;
+  top: 1.7rem;
+}
+.block_moduls .zag {
+  margin-bottom: 3.74rem;
+}
+.block_moduls p {
+  margin-bottom: 2.35rem;
+}
+.block_moduls_ul {
+  margin-bottom: 6rem;
+}
+.block_moduls_ul a {
+  margin-bottom: 1rem;
+}
+.block_moduls_li {
+  display: block;
+  text-align: left;
+  padding-inline: 3.64rem;
+  position: relative;
+}
+.block_moduls_li::after {
+  content: "";
+  position: absolute;
+  background-image: url(svg/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.28rem;
+  height: 3.07rem;
+  right: 3.14rem;
+}
+
+/* Чаты и канал */
+.chats {
+  padding: 8.64rem 0 10.35rem;
+}
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--black_background);
+  margin-bottom: 3.21rem;
+}
+.span_chats {
+  position: relative;
+  top: -2.7rem;
+  margin-bottom: 4.35rem;
+}
+.chats > p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 7.14rem;
+}
+.chats_li {
+  margin-left: 16.71rem;
+  position: relative;
+}
+.chats_li img {
+  margin-bottom: 1.71rem;
+  display: block;
+  width: 50.92rem;
+}
+.chats_li p {
+  text-align: left;
+  margin-bottom: 4.42rem;
+  font-weight: 300;
+}
+#chats_li_3 {
+  display: flex;
+  column-gap: 2rem;
+}
+#chats_li_3 img {
+  width: 19.64rem;
+  height: 18.14rem;
+}
+.chats_li::before {
+  content: "";
+  position: absolute;
+  background-image: url(png/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 21rem;
+  width: 14.78rem;
+  left: -15rem;
+  top: -2rem;
+}
+#chats_li_1::before {
+  left: -16.2rem;
+}
+#chats_li_2::before {
+  background-image: url(png/2.png);
+  top: 1rem;
+}
+#chats_li_3::before {
+  background-image: url(png/3.png);
+  top: 0rem;
+  margin-bottom: 10.35rem;
+}
+
+/* Вопросы */
+.block_questions {
+  background-color: var(--black_background);
+  color: var(--white);
+  padding: 7.14rem 0 7.14rem;
+}
+.block_questions .zag {
+  margin-right: 27.07rem;
+  display: block;
+  margin-bottom: 3.64rem;
+  position: relative;
+}
+.block_questions .zag::after {
+  content: "";
+  position: absolute;
+  background-image: url(png/airpods.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18.14rem;
+  height: 18.12rem;
+  top: 7rem;
+  right: -29rem;
+}
+.span_ques {
+  position: relative;
+  top: -2rem;
+}
+.block_questions p {
+  margin-left: 3.35rem;
+  margin-bottom: 5.07rem;
+}
+.block_questions .button {
+  width: 57.85rem;
+}
+
+/* Странички модулей */
+.block_logo {
+  padding: 11.5rem 0 9.428rem;
+  background-color: var(--blue);
+  color: var(--white);
+  background-image: url(png/moduls_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.block_zag {
+  position: relative;
+  top: -2rem;
+  line-height: 0.82em;
+  margin-bottom: 2.642rem;
+}
+.block_logo p {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.lessens {
+  padding: 7.357rem 0 6.78rem;
+}
+.lessens_li {
+  width: 63.57rem;
+  padding: 2.85rem 0 2.21rem;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 4.5rem;
+  border-radius: 3.42rem;
+  box-shadow: 0.28rem 0.35rem 1.64rem 0 rgba(0, 0, 0, 0.25);
+  line-height: 1em;
+}
+.lessens_li_li:first-child {
+  display: block;
+  margin-inline: auto;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--blue);
+  font-weight: 400;
+  padding: 7.85rem 4.14rem 9.51rem;
+  width: 57.42rem;
+  border-radius: 1.85rem;
+  margin-bottom: 2rem;
+}
+.numder_lessen {
+  margin-bottom: 1em;
+}
+.lessens_li_ul:nth-child(n + 1) {
+  display: block;
+  width: 57.42rem;
+  margin-inline: auto;
+  font-weight: 300;
+}
+.lessens_li_li:nth-child(2) {
+  margin-bottom: 1em;
+}
+.lessens_li_ul:last-child p {
+  font-weight: 500;
+  border-bottom: 0.3rem solid var(--black_text);
+  width: fit-content;
+  margin-bottom: 1em;
+}
+.homework_li {
+  list-style: none; /* Убираем стандартный маркер */
+  padding-left: 1.2em; /* Отступ для псевдоэлемента */
+  position: relative;
+}
+.homework_li::before {
+  content: "1.";
+  color: var(--black_text);
+  position: absolute;
+  left: 0.2em; /* Позиционируем вручную */
+  font-weight: 400;
+}
+.homework_li:first-child::before {
+  content: "•"; /* Кастомный маркер */
+  position: absolute;
+  left: 0.3em; /* Позиционируем вручную */
+  color: black; /* Цвет маркера */
+}
+.homework_li:nth-child(2)::before {
+  left: 0.28em; /* Позиционируем вручную */
+}
+.homework_li:nth-child(3)::before {
+  content: "2.";
+}
+.homework_li:nth-child(4)::before {
+  content: "3.";
+}
+.homework_li:nth-child(5)::before {
+  content: "4.";
+}
+.homework_li:nth-child(6)::before {
+  content: "5.";
+}
+.homework_li:nth-child(7)::before {
+  content: "6.";
+}
+.lessens p:last-child {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 7.85rem;
+}
+
+.block_moduls_ul a:nth-child(n) {
+  /* Визуальные стили неактивной кнопки */
+  opacity: 0.6; /* Полупрозрачность */
+  color: #666666; /* Серый текст */
+  cursor: not-allowed; /* Курсор "недоступно" */
+
+  /* Отключаем клики */
+  pointer-events: none;
+}
+
+/* Пароль */
+#passwordOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+}
+
+#passwordInput {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+#submitPassword {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Жесткая блокировка контента */
+body.password-locked {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    filter: blur(5px);
+    pointer-events: none;
+}
