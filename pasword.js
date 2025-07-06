@@ -1,18 +1,22 @@
-// пароль
 document.addEventListener('DOMContentLoaded', function() {
-    // Проверяем, нужно ли запускать защиту (исключаем главную страницу)
-    const isProtectedPage = !window.location.pathname.endsWith('index.html') && 
-                          window.location.pathname !== '/' &&
-                          !window.location.pathname.includes('index.');
+    // Проверяем, нужно ли запускать защиту (только для modul_6.html и modul_7.html)
+    const isProtectedPage = window.location.pathname.endsWith('modul_6.html') || 
+                          window.location.pathname.endsWith('modul_7.html');
     
     if (!isProtectedPage) {
-        // Если это главная страница - сразу показываем контент
-        document.querySelector('.main').style.filter = 'none';
-        document.querySelector('.main').style.pointerEvents = 'auto';
+        // Если это не защищенная страница - сразу показываем контент
+        const main = document.querySelector('.main');
+        if (main) {
+            main.style.filter = 'none';
+            main.style.pointerEvents = 'auto';
+        }
+        const overlay = document.getElementById('passwordOverlay');
+        if (overlay) overlay.style.display = 'none';
+        document.body.classList.remove('password-locked');
         return;
     }
 
-    // Защита паролем только для НЕглавных страниц
+    // Защита паролем только для указанных страниц
     const validPasswords = ["secret123", "admin2024", "мойпароль"];
     const overlay = document.getElementById('passwordOverlay');
     const passwordInput = document.getElementById('passwordInput');
@@ -40,9 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showError() {
-        errorText.style.display = 'block';
-        passwordInput.value = '';
-        setTimeout(() => errorText.style.display = 'none', 2000);
+        if (errorText) {
+            errorText.style.display = 'block';
+            setTimeout(() => errorText.style.display = 'none', 2000);
+        }
+        if (passwordInput) passwordInput.value = '';
     }
 
     function unlockContent() {

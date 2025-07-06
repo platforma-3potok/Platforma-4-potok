@@ -14,8 +14,8 @@
 	<script src="pasword.js" defer></script>
 	<link rel="stylesheet" href="pasword.css">
 </head>
-<body class="password-locked">
-	<main class="main">
+<body>
+	<main class="main_first">
 		<!-- Заголовок -->
 		 <div class="block_logo">
 			<h1 class="zag">
@@ -39,11 +39,13 @@
 			<ul class="lessens_ul">
 				<li class="lessens_li">
 					<ul class="lessens_li_ul">
-						<li class="lessens_li_li">
-							<div class="numder_lessen">1 урок</div> 
-							знакомство с веб-дизайном, какие <br>
-							навыки нужно иметь веб-дизайнеру
-						</li>
+						<a href="https://youtu.be/MX97v9Z0N5g?si=vXJONPYtGrDd2q5M">
+							<li class="lessens_li_li">
+								<div class="numder_lessen">1 урок</div> 
+								знакомство с веб-дизайном, какие <br>
+								навыки нужно иметь веб-дизайнеру
+							</li>
+						</a>
 						<li class="lessens_li_li">
 							После просмотра данного урока вы узнаете что такое веб-дизайн и какими навыками должен обладать новичок
 						</li>
@@ -51,11 +53,13 @@
 				</li>
 				<li class="lessens_li">
 					<ul class="lessens_li_ul">
-						<li class="lessens_li_li">
-							<div class="numder_lessen">2 урок</div> 
-							все функции программы Figma <br>
-							в одном уроке
-						</li>
+						<a href="">
+							<li class="lessens_li_li">							
+								<div class="numder_lessen">2 урок</div> 
+								все функции программы Figma <br>
+								в одном уроке
+							</li>
+						</a>
 						<li class="lessens_li_li">
 							После просмотра данного урока вы сможете <br>
 							работать в программе Figma без трудностей, <br>
@@ -73,12 +77,14 @@
 				</li>
 				<li class="lessens_li">
 					<ul class="lessens_li_ul">
-						<li class="lessens_li_li">
-							<div class="numder_lessen">3 урок</div> 
-							виды сайтов и универсальная <br>
-							структура сайта для разного вида <br>
-							клиентов
-						</li>
+						<a href="https://youtu.be/KKSBY9n-lAs?si=TZLKZdyx5lbgGkAx">
+							<li class="lessens_li_li">
+								<div class="numder_lessen">3 урок</div> 
+								виды сайтов и универсальная <br>
+								структура сайта для разного вида <br>
+								клиентов
+							</li>
+						</a>
 						<li class="lessens_li_li">
 							После просмотра данного урока вы сможете самостоятельно составлять базовую <br>
 							структуру сайта для любых клиентов, а также узнаете какие виды сайтов существуют
@@ -104,16 +110,5 @@
 			</p>
 		</div>
 	</main>
-
-	<!-- Модальное окно -->
-    <div id="passwordOverlay">
-        <div class="password-box">
-            <h2>Требуется авторизация</h2>
-            <p>Для доступа введите пароль:</p>
-            <input type="password" id="passwordInput" placeholder="Введите пароль">
-            <button id="submitPassword">Продолжить</button>
-            <p id="errorText" class="error-message">Неверный пароль</p>
-        </div>
-    </div>
 </body>
 </html>

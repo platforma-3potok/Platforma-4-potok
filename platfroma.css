@@ -309,6 +309,9 @@ body {
   margin-inline: auto;
   font-weight: 300;
 }
+.lessens_li_li:first-child {
+  cursor: pointer;
+}
 .lessens_li_li:nth-child(2) {
   margin-bottom: 1em;
 }
