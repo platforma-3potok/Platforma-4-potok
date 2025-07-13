@@ -363,6 +363,17 @@ body {
   margin-top: 7.85rem;
 }
 
+.homework_ul .button {
+  background-color: var(--blue);
+  text-align: center;
+  width: 31.57rem;
+  height: 6.64rem;
+  margin-top: 2.78rem;
+}
+.homework_ul .button::after {
+  display: none;
+}
+
 .block_moduls_ul a:nth-child(n + 3) {
   /* Визуальные стили неактивной кнопки */
   opacity: 0.6; /* Полупрозрачность */
