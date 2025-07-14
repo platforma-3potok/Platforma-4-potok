@@ -374,7 +374,7 @@ body {
   display: none;
 }
 
-.block_moduls_ul a:nth-child(n + 3) {
+.block_moduls_ul a:nth-child(n + 4) {
   /* Визуальные стили неактивной кнопки */
   opacity: 0.6; /* Полупрозрачность */
   color: #666666; /* Серый текст */
