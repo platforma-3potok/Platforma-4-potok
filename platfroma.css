@@ -379,8 +379,6 @@ body {
   opacity: 0.6; /* Полупрозрачность */
   color: #666666; /* Серый текст */
   cursor: not-allowed; /* Курсор "недоступно" */
-
-  /* Отключаем клики */
-  pointer-events: none;
+  pointer-events: none; /* Отключаем клики */
 }
 
